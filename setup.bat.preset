@@ -1,0 +1,14 @@
+@echo off
+
+rem ^! や ^& などの特殊文字を使う時は ^^ でエスケープしなければならない。
+
+setLocal enableextensions enabledelayedexpansion
+
+set SETUP_PATH=setup
+
+set INSTALLER_PATH=<<INSTALLER_PATH>>
+
+for %%a in ("%INSTALLER_PATH%%SETUP_PATH%\*.bat") do call "%%a" %0 "%INSTALLER_PATH%"
+
+endlocal
+exit

@@ -1,0 +1,44 @@
+const	path = require('path'),
+		PATH_GLOBAL_NPM_MODULES = '<<PATH_GLOBAL_NPM_MODULES>>',
+		config =	{
+						
+						entry: './src/index.js',
+						
+						mode: 'development',
+						
+						module: {
+							rules: [
+								{
+									exclude: /node_modules/,
+									test: /\.m?js$/,
+									use: {
+										loader: PATH_GLOBAL_NPM_MODULES + 'babel-loader',
+										options: {
+											cwd: PATH_GLOBAL_NPM_MODULES,
+											presets: [
+												[
+													'@babel/preset-env',
+													{ useBuiltIns: 'usage', corejs: '3.33' }
+												]
+											],
+											targets: {
+												ie: '11'
+											}
+										}
+									}
+								}
+							]
+						},
+						
+						output: {
+							
+							filename: 'main.js',
+							path: path.join(process.cwd(), 'dist')
+							
+						},
+						
+						resolve: { modules: [ PATH_GLOBAL_NPM_MODULES ] }
+						
+					};
+
+module.exports = config;

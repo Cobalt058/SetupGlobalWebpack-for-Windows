@@ -1,1 +1,0 @@
-call npx webpack --watch -c webpack.config.js

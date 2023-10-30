@@ -1,6 +1,6 @@
 @echo off
 
-rem ^! �� ^& �Ȃǂ̓��ꕶ�����g������ ^^ �ŃG�X�P�[�v���Ȃ���΂Ȃ�Ȃ��B
+rem ^! や ^& などの特殊文字を使う時は ^^ でエスケープしなければならない。
 
 setLocal enableextensions enabledelayedexpansion
 

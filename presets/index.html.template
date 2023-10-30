@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="<[placeholder][index.html][lang]>">
+	<head>
+		<meta charset="<[placeholder][index.html][charset]>">
+		<title><[placeholder][index.html][title]></title>
+		<script src="<[placeholder][bundledFileName]>"></script>
+	</head>
+	<body>
+		
+	</body>
+</html>

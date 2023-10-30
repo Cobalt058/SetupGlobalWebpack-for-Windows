@@ -1,8 +1,8 @@
 const	path = require('path'),
-		PATH_GLOBAL_NPM_MODULES = '<<PATH_GLOBAL_NPM_MODULES>>',
+		PATH_GLOBAL_NPM_MODULES = '<[path][globalNPMModules]>',
 		config =	{
 						
-						entry: './src/index.js',
+						entry: './<[placeholder][sourcesDirName]>/<[placeholder][importFileName]>',
 						
 						mode: 'development',
 						
@@ -32,8 +32,8 @@ const	path = require('path'),
 						
 						output: {
 							
-							filename: 'main.js',
-							path: path.join(process.cwd(), 'dist')
+							filename: '<[placeholder][bundledFileName]>',
+							path: process.cwd()
 							
 						},
 						

@@ -1,0 +1,52 @@
+{
+	"preset": {
+		"babel.config.json":			{
+												"path": "<[presets]>babel.config.json.preset",
+												"dst": "<[project]>",
+												"renameRx": [ [ "(.*?)\\.preset$", "i" ], "$1" ]
+											},
+		"gw.bundle.bat":				{
+												"path": "<[presets]>gw.bundle.bat.preset",
+												"dst": "<[project]>",
+												"renameRx": [ [ "(.*?)\\.preset$", "i" ], "$1" ]
+											},
+		"gw.bundle-watched.bat":	{
+												"path": "<[presets]>gw.bundle-watched.bat.preset",
+												"dst": "<[project]>",
+												"renameRx": [ [ "(.*?)\\.preset$", "i" ], "$1" ]
+											},
+		"gw.placeholder.json":		{
+												"path": "<[presets]>gw.placeholder.json.preset",
+												"dst": "<[project]>",
+												"renameRx": [ [ "(.*?)\\.preset$", "i" ], "$1" ]
+											},
+		"index.html":					{
+												"path": "<[presets]>index.html.template",
+												"dst": "<[project]>",
+												"renameRx": [ [ "(.*?)\\.template$", "i" ], "$1" ]
+											},
+		"<[importFileName]>":		{
+												"path": "<[presets]><[importFileName]>.preset",
+												"dst": "<[project]><[sourcesDirName]>",
+												"renameRx": [ [ "(.*?)\\.preset$", "i" ], "$1" ]
+											},
+		"webpack.config.js":			{
+												"path": "<[presets]>webpack.config.js.preset",
+												"dst": "<[project]>",
+												"renameRx": [ [ "(.*?)\\.preset$", "i" ], "$1" ]
+											}
+	},
+	"placeholder": {
+		"sourcesDirName": "<[sourcesDirName]>",
+		"importFileName": "<[importFileName]>",
+		"bundledFileName": "<[bundledFileName]>",
+		"index.html": {
+			"charset": "utf-8",
+			"lang": "ja",
+			"title": "Hi, world."
+		},
+		"index.js": {
+			"sample": "Promise.resolve('hi').then(alert);"
+		}
+	}
+}

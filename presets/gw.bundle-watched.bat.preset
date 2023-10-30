@@ -1,1 +1,1 @@
-call npx webpack --watch -c webpack.config.js
+call "<[path][globalNPM]>webpack" --watch -c webpack.config.js

@@ -1,10 +1,5 @@
 {
 	"preset": {
-		"babel.config.json":			{
-												"path": "<[presets]>babel.config.json.preset",
-												"dst": "<[project]>",
-												"renameRx": [ [ "(.*?)\\.preset$", "i" ], "$1" ]
-											},
 		"gw.bundle.bat":				{
 												"path": "<[presets]>gw.bundle.bat.preset",
 												"dst": "<[project]>",

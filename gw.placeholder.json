@@ -43,5 +43,12 @@
 		"index.js": {
 			"sample": "Promise.resolve('hi').then(alert);"
 		}
+	},
+	"setting": {
+		"setup": {
+			"config.bat": {
+				"langs": [ "ja-JP" ]
+			}
+		}
 	}
 }
